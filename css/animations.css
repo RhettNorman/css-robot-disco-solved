@@ -1,0 +1,115 @@
+.left-eye-design1, .left-eye-design2 {
+  animation: rotation 10s infinite 0s;
+}
+
+.right-eye-design1, .right-eye-design2 {
+  animation: rotation 3s infinite reverse 0s;
+}
+
+.robot-hair-style {
+  animation: grow 7s infinite alternate 3s, rotation 1s 1 25s;
+}
+
+.robot-teeth {
+  animation: disappear 20s infinite alternate;
+}
+
+.robot-nose:hover {
+  animation: color-change 12s;
+}
+
+.robot-ear-left {
+  animation: movement-left-ear 6s infinite linear;
+}
+
+.robot-ear-right {
+  animation: movement-right-ear 9s infinite alternate;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes grow {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
+
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    background-color: orange;
+  }
+  50% {
+    background-color: red;
+  }
+  100%{
+    background-color: pink;
+  }
+}
+
+@keyframes movement-right-ear {
+  0% {
+    top: -520px;
+    left: 830px;
+  }
+  33% {
+    top: -600px;
+    left: 870px;
+  }
+  66% {
+    top: -420px;
+    left: 900px;
+  }
+  100% {
+    top: 0px;
+    left: 600px;
+  }
+}
+
+@keyframes movement-left-ear {
+  0% {
+    left: 0px;
+    top: -300px;
+  }
+  20% {
+    top: -200px;
+    left: 50px;
+  }
+  40% {
+    top: -125px;
+    left: 20px;
+  }
+  60% {
+    top: -200px;
+    left: 50px;
+  }
+  80% {
+    top: -250px;
+    left: 20px;
+  }
+  100% {
+    top: -300px;
+    left: 0px;
+  }
+}

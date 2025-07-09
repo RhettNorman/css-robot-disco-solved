@@ -5,37 +5,276 @@ body {
 /* 👇👇👇 Paste the styles of your Fancy Robot from the "Position it right" assignment here 👇👇👇 */
 
 .robot-container {
+  height: 100vh;
+  width: 100vw;
+  align-self: center;
+  position: relative;
+  margin: 100px;
 }
 
 .robot-face-shape {
+  height: 500px;
+  width: 700px;
+  border-radius: 300px;
+  border: 10px rgb(20, 163, 116) solid;
+  background: radial-gradient(circle, rgb(56, 35, 172), rgb(133, 51, 51), rgb(228, 47, 213), red);
+  position: relative;
+  left: 100px;
+  top: 100px;
 }
 
 .robot-eye-left {
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  border: 2px red solid;
+  position: relative;
+  top: 50px;
+  left: 150px;
 }
 
+.left-eye-design2 {
+  width: 0;
+  height: 0;
+  border: 30px solid transparent;
+  border-top: 40px solid red;
+  border-radius: 60px;
+  position: relative;
+  left: 9px;
+  top: 5px;
+}
+
+.left-eye-design1 {
+  width: 0;
+  height: 0;
+  border: 30px solid transparent;
+  border-bottom: 40px solid red;
+  border-radius: 60px;
+  position: relative;
+  left: 9px;
+  top: -68px;
+}
+
+
 .robot-eye-right {
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  border: 3px red solid;
+  position: relative;
+  top: -29px;
+  left: 450px;
+}
+
+.right-eye-design1 {
+  height: 77px;
+  width: 1px;
+  border: 1px solid red;
+  position: relative;
+  left: 38px;
+}
+
+.right-eye-design2 {
+  height: 1px;
+  width: 77px;
+  border: 1px solid red;
+  position: relative;
+  bottom: 42px;
 }
 
 .robot-ear-left {
+  height: 200px;
+  width: 75px;
+  border: 9px solid black;
+  background-color: green;
+  position: relative;
+  border-radius: 20px 100px 20px 100px;
+  top: -300px;
 }
 
 .robot-ear-right {
+  height: 200px;
+  width: 75px;
+  border: 9px solid black;
+  background-color: green;
+  position: relative;
+  border-radius: 100px 20px 100px 20px;
+  top: -520px;
+  left: 830px;
 }
 
 .robot-nose {
+  height: 21%;
+  width: 22%;
+  background-color: transparent;
+  position: relative;
+  border-radius: 100px;
+  left: 275px;
+  top: 30px;
+  box-shadow: 5px 0px 80px 30px orange;
 }
 
-.robot-nose:before {
-}
-
-.robot-nose:after {
+.inside-nose {
+  height: 75px;
+  width: 120px;
+  background-color: orange;
+  opacity: 30%;
+  position: relative;
+  border-radius: 50px;
+  left: 15px;
+  top: 13px;
 }
 
 .robot-teeth {
+  width: 350px;
+  border: 100px solid red;
+  border-radius: 50px;
+  border-bottom: 0px solid;
+  border-width: 50px;
+  position: relative;
+  left: 125px;
+  top: 60px;
 }
 
 .robot-tooth {
+  position: absolute;
+}
+
+.top {
+  top: -48px;
+}
+
+.bottom {
+  top: 2px;
+}
+
+.t2 {
+  left: 50px;
+}
+
+.t3 {
+  left: 100px;
+}
+
+.t4 {
+  left: 140px;
+}
+
+.t5 {
+  left: 200px;
+}
+
+.t6 {
+  left: 250px;
+}
+
+.t7 {
+  left: 300px;
+
+}
+
+.n1, .n7 {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 56px solid blueviolet;
+}
+
+.n9, .n13 {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 56px solid blueviolet;
+  top: -8px;
+}
+
+.n2, .n6 {
+  font-size: large;
+  height: 1.8em;
+  width: 2.6em;
+  background-color: blueviolet;
+  border-radius: 23px / 16px;
+}
+
+.t4 {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  box-shadow: 10px 10px 0 0 blueviolet;
+  top: -34px;
+}
+
+.n10 {
+  height: 60px;
+  width: 20px;
+  transform: skew(25deg);
+  background-color: blueviolet;
+  top: -12px;
+}
+
+.n12 {
+  height: 60px;
+  width: 20px;
+  transform: skew(-25deg);
+  background-color: blueviolet;
+  top: -12px;
+  left: 230px;
 }
 
 .robot-hair-style {
+  height: 100px;
+  width: 500px;
+  position: absolute;
+  top: -10px;
+  left: 200px;
+}
+
+.robot-hair-one {
+  height: 50px;
+  width: 100px;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToEOS614v9QCgeZi2cyraQFcB9d2jl2mdqFA&s);
+  background-size: 100%;
+  border-radius: 40px 20px;
+}
+
+.robot-hair-two {
+  height: 80px;
+  width: 30px;
+  border: 5px solid greenyellow;
+}
+
+.robot-hair-three {
+  background-color: rgb(114, 173, 25);
+  position: absolute;
+  border-left: 82px solid red;
+  border-right: 82px solid red;
+  border-top: 19px solid rgb(114, 173, 25);
+  border-bottom: 19px solid rgb(114, 173, 25);
+  left: 180px;
+  top: 40px;
+}
+
+.h1 {
+  position: absolute;
+}
+
+.h2 {
+  transform: skew(10deg);
+  border-left: 20px solid transparent;
+  position: absolute;
+  left: 110px;
+}
+
+.h4 {
+  transform: skew(-10deg);
+  border-right: 20px solid transparent;
+  position: absolute;
+  left: 360px;
+}
+
+.h5 {
+  position: absolute;
+  left: 420px;
 }
